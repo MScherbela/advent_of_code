@@ -13,6 +13,7 @@ class Monkey:
     def _update_worry_level(self, old):
         new = eval(self.operation)
         # new = new // 3
+        new = new % (7*19*5*11*17*13*2*3)
         return new
 
     def inspect_all_items(self, all_monkeys):
@@ -49,7 +50,7 @@ with open("11/input.txt") as f:
     monkeys = [Monkey.from_input(d) for d in data]
 
 
-n_rounds = 20
+n_rounds = 10_000
 for _ in range(n_rounds):
     for m in monkeys:
         m.inspect_all_items(monkeys)
