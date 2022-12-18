@@ -8,9 +8,9 @@ class Node:
 
 @dataclasses.dataclass(frozen=True, eq=True)
 class State:
-    t: int
+    t_remain: int
     pos: str
-    open_valves: tuple
+    closed_valves: tuple
 
 graph = {}
 with open("16/input.txt") as f:
@@ -21,38 +21,54 @@ with open("16/input.txt") as f:
         edges = tuple(match.named['edges'].split(", "))
         graph[match.named['name']] = Node(edges=edges, flow_when_open=match.named['flow_when_open'])
 
-T_MAX = 30
-MAX_VALVES_TO_OPEN = len([n for n in graph.values() if n.flow_when_open > 0])
 
-def move(s: State, move: str):
-    if move == "open":
-        new_state = State(t=s.t+1,
-                     pos=s.pos,
-                     open_valves=tuple(sorted(s.open_valves + (s.pos,))))
-        additional_flow = (T_MAX - s.t - 1) * graph[s.pos].flow_when_open
-    else:
-        new_state = State(t=s.t+1, pos=move, open_valves=s.open_valves)
-        additional_flow = 0
-    return new_state, additional_flow
+def get_shortest_distances(graph: dict[str, Node]):
+    node_keys = list(graph.keys())
+    distance = {}
+    for n in node_keys:
+        distance[n] = {}
+        for m in node_keys:
+            if n == m:
+                distance[n][m] = 0
+            elif m in graph[n].edges:
+                distance[n][m] = 1
+            else:
+                distance[n][m] = 1000
+    for k in node_keys:
+        for i in node_keys:
+            for j in node_keys:
+                d_indirect = distance[i][k] + distance[k][j]
+                if distance[i][j] > d_indirect:
+                    distance[i][j] = d_indirect
+    return distance
+
+print("Building distance matrix...")
+distance_matrix = get_shortest_distances(graph)
+
+def get_possible_moves(state: State):
+    next_valve_to_open = []
+    for n in state.closed_valves:
+        if distance_matrix[state.pos][n] < state.t_remain:
+            next_valve_to_open.append(n)
+    return next_valve_to_open
+
+def move(s: State, next_valve: str):
+    t_remain = s.t_remain - distance_matrix[s.pos][next_valve] - 1
+    pos = next_valve
+    closed_valves = tuple([n for n in s.closed_valves if n != next_valve])
+    payoff = graph[next_valve].flow_when_open * t_remain
+    return State(t_remain, pos, closed_valves), payoff
 
 def search_best_next_move(s: State, cache: dict):
     if s in cache:
         return cache[s]
-    # for t_ in range(s.t - 1):
-    #     if State(t_, s.pos, s.open_valves) in cache:
-    #         return None, 0
-
-    possible_moves = graph[s.pos].edges
-    if (graph[s.pos].flow_when_open > 0) and (s.pos not in s.open_valves):
-        possible_moves = possible_moves + ("open", )
 
     best_move = None
-    best_payoff = -1
-    for m in possible_moves:
+    best_payoff = 0
+    for m in get_possible_moves(s):
         s_new, payoff = move(s, m)
-        if s_new.t < T_MAX:
-            _, future_payoff = search_best_next_move(s_new, cache)
-            payoff += future_payoff
+        _, future_payoff = search_best_next_move(s_new, cache)
+        payoff += future_payoff
         if payoff > best_payoff:
             best_move = m
             best_payoff = payoff
@@ -63,7 +79,8 @@ def search_best_next_move(s: State, cache: dict):
 
 if __name__ == '__main__':
     state_cache = {}
-    initial_state = State(t=0, pos="AA", open_valves=())
+    initially_closed_valves = tuple(sorted([n for n in graph if graph[n].flow_when_open > 0]))
+    initial_state = State(t_remain=30, pos="AA", closed_valves=initially_closed_valves)
     first_move, payoff = search_best_next_move(initial_state, state_cache)
     print(f"Cache size: {len(state_cache)}")
     print(f"Payoff: {payoff}")
@@ -71,13 +88,11 @@ if __name__ == '__main__':
     s = initial_state
     move_sequence = []
     while s in state_cache:
-        move_sequence.append(state_cache[s][0])
-        s = move(s, move_sequence[-1])[0]
+        next_move = state_cache[s][0]
+        if next_move is None:
+            break
+        move_sequence.append(next_move)
+        s = move(s, next_move)[0]
     print(move_sequence)
-
-
-
-
-
 
 
