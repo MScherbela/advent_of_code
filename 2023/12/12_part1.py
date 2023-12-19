@@ -27,25 +27,20 @@ def extend_input(symbols, groups, n_reps=5):
     return symbols, groups
 
 data = []
-with open("test_input.txt") as f:
+with open("input.txt") as f:
     for line in f:
         symbols, groups = line.strip().split(" ")
         groups = [int(g) for g in groups.split(",")]
         data.append((symbols, groups))
 
 n_total_part1 = 0
+values_part1 = []
 for i, (symbols, groups) in enumerate(data):
     regex = build_regex(groups)
-    n_total_part1 += get_nr_of_possible_strings(symbols, regex)
+    n = get_nr_of_possible_strings(symbols, regex)
+    n_total_part1 += n
+    values_part1.append(n)
+    print(f"{i}: {n}")
 print("Part 1: ", n_total_part1)
-
-data_extended = [extend_input(symbols, groups) for symbols, groups in data]
-n_total_part2 = 0
-for i, (symbols, groups) in enumerate(data_extended):
-    regex = build_regex(groups)
-    n_total_part2 += get_nr_of_possible_strings(symbols, regex)
-
-print("Part 2: ", n_total_part2)
-
 
 
