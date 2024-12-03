@@ -1,0 +1,479 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2024-12-03">
+    <creator>NetworkX 3.4.2</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="name" type="string" />
+      <attribute id="1" title="type" type="string" />
+    </attributes>
+    <nodes>
+      <node id="ls" label="ls">
+        <attvalues>
+          <attvalue for="0" value="ls" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="cs" label="cs">
+        <attvalues>
+          <attvalue for="0" value="cs" />
+          <attvalue for="1" value="Conjuction" />
+        </attvalues>
+      </node>
+      <node id="jd" label="jd">
+        <attvalues>
+          <attvalue for="0" value="jd" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="st" label="st">
+        <attvalues>
+          <attvalue for="0" value="st" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="jh" label="jh">
+        <attvalues>
+          <attvalue for="0" value="jh" />
+          <attvalue for="1" value="Conjuction" />
+        </attvalues>
+      </node>
+      <node id="bj" label="bj">
+        <attvalues>
+          <attvalue for="0" value="bj" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="hc" label="hc">
+        <attvalues>
+          <attvalue for="0" value="hc" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="tn" label="tn">
+        <attvalues>
+          <attvalue for="0" value="tn" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="xs" label="xs">
+        <attvalues>
+          <attvalue for="0" value="xs" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="rr" label="rr">
+        <attvalues>
+          <attvalue for="0" value="rr" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="pq" label="pq">
+        <attvalues>
+          <attvalue for="0" value="pq" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="tl" label="tl">
+        <attvalues>
+          <attvalue for="0" value="tl" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="rj" label="rj">
+        <attvalues>
+          <attvalue for="0" value="rj" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="km" label="km">
+        <attvalues>
+          <attvalue for="0" value="km" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="ck" label="ck">
+        <attvalues>
+          <attvalue for="0" value="ck" />
+          <attvalue for="1" value="Conjuction" />
+        </attvalues>
+      </node>
+      <node id="lb" label="lb">
+        <attvalues>
+          <attvalue for="0" value="lb" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="cg" label="cg">
+        <attvalues>
+          <attvalue for="0" value="cg" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="zz" label="zz">
+        <attvalues>
+          <attvalue for="0" value="zz" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="dx" label="dx">
+        <attvalues>
+          <attvalue for="0" value="dx" />
+          <attvalue for="1" value="Conjuction" />
+        </attvalues>
+      </node>
+      <node id="ch" label="ch">
+        <attvalues>
+          <attvalue for="0" value="ch" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="kk" label="kk">
+        <attvalues>
+          <attvalue for="0" value="kk" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="tc" label="tc">
+        <attvalues>
+          <attvalue for="0" value="tc" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="hr" label="hr">
+        <attvalues>
+          <attvalue for="0" value="hr" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="pl" label="pl">
+        <attvalues>
+          <attvalue for="0" value="pl" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="pj" label="pj">
+        <attvalues>
+          <attvalue for="0" value="pj" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="pr" label="pr">
+        <attvalues>
+          <attvalue for="0" value="pr" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="zl" label="zl">
+        <attvalues>
+          <attvalue for="0" value="zl" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="vn" label="vn">
+        <attvalues>
+          <attvalue for="0" value="vn" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="hn" label="hn">
+        <attvalues>
+          <attvalue for="0" value="hn" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="qb" label="qb">
+        <attvalues>
+          <attvalue for="0" value="qb" />
+          <attvalue for="1" value="Conjuction" />
+        </attvalues>
+      </node>
+      <node id="lv" label="lv">
+        <attvalues>
+          <attvalue for="0" value="lv" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="mp" label="mp">
+        <attvalues>
+          <attvalue for="0" value="mp" />
+          <attvalue for="1" value="Conjuction" />
+        </attvalues>
+      </node>
+      <node id="dr" label="dr">
+        <attvalues>
+          <attvalue for="0" value="dr" />
+          <attvalue for="1" value="Conjuction" />
+        </attvalues>
+      </node>
+      <node id="broadcaster" label="broadcaster">
+        <attvalues>
+          <attvalue for="0" value="broadcaster" />
+          <attvalue for="1" value="Broadcast" />
+        </attvalues>
+      </node>
+      <node id="ns" label="ns">
+        <attvalues>
+          <attvalue for="0" value="ns" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="xz" label="xz">
+        <attvalues>
+          <attvalue for="0" value="xz" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="sg" label="sg">
+        <attvalues>
+          <attvalue for="0" value="sg" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="gg" label="gg">
+        <attvalues>
+          <attvalue for="0" value="gg" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="nx" label="nx">
+        <attvalues>
+          <attvalue for="0" value="nx" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="cr" label="cr">
+        <attvalues>
+          <attvalue for="0" value="cr" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="jg" label="jg">
+        <attvalues>
+          <attvalue for="0" value="jg" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="zj" label="zj">
+        <attvalues>
+          <attvalue for="0" value="zj" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="zn" label="zn">
+        <attvalues>
+          <attvalue for="0" value="zn" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="fl" label="fl">
+        <attvalues>
+          <attvalue for="0" value="fl" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="ps" label="ps">
+        <attvalues>
+          <attvalue for="0" value="ps" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="qp" label="qp">
+        <attvalues>
+          <attvalue for="0" value="qp" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="bp" label="bp">
+        <attvalues>
+          <attvalue for="0" value="bp" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="zr" label="zr">
+        <attvalues>
+          <attvalue for="0" value="zr" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="kl" label="kl">
+        <attvalues>
+          <attvalue for="0" value="kl" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="xq" label="xq">
+        <attvalues>
+          <attvalue for="0" value="xq" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="rm" label="rm">
+        <attvalues>
+          <attvalue for="0" value="rm" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="rz" label="rz">
+        <attvalues>
+          <attvalue for="0" value="rz" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="pm" label="pm">
+        <attvalues>
+          <attvalue for="0" value="pm" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="rk" label="rk">
+        <attvalues>
+          <attvalue for="0" value="rk" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="rx" label="rx">
+        <attvalues>
+          <attvalue for="0" value="rx" />
+          <attvalue for="1" value="Sink" />
+        </attvalues>
+      </node>
+      <node id="qt" label="qt">
+        <attvalues>
+          <attvalue for="0" value="qt" />
+          <attvalue for="1" value="Conjuction" />
+        </attvalues>
+      </node>
+      <node id="dd" label="dd">
+        <attvalues>
+          <attvalue for="0" value="dd" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="kd" label="kd">
+        <attvalues>
+          <attvalue for="0" value="kd" />
+          <attvalue for="1" value="FlipFlop" />
+        </attvalues>
+      </node>
+      <node id="ng" label="ng">
+        <attvalues>
+          <attvalue for="0" value="ng" />
+          <attvalue for="1" value="Conjuction" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="ls" target="cs" id="0" />
+      <edge source="ls" target="jd" id="1" />
+      <edge source="cs" target="hn" id="2" />
+      <edge source="cs" target="pj" id="3" />
+      <edge source="cs" target="qb" id="4" />
+      <edge source="cs" target="zl" id="5" />
+      <edge source="jd" target="cs" id="6" />
+      <edge source="st" target="jh" id="7" />
+      <edge source="st" target="bj" id="8" />
+      <edge source="jh" target="ng" id="9" />
+      <edge source="jh" target="bp" id="10" />
+      <edge source="jh" target="zr" id="11" />
+      <edge source="jh" target="sg" id="12" />
+      <edge source="jh" target="bj" id="13" />
+      <edge source="bj" target="gg" id="14" />
+      <edge source="hc" target="tn" id="15" />
+      <edge source="tn" target="dx" id="16" />
+      <edge source="tn" target="xs" id="17" />
+      <edge source="xs" target="rr" id="18" />
+      <edge source="rr" target="rm" id="19" />
+      <edge source="rr" target="dx" id="20" />
+      <edge source="pq" target="tl" id="21" />
+      <edge source="pq" target="cs" id="22" />
+      <edge source="tl" target="vn" id="23" />
+      <edge source="tl" target="cs" id="24" />
+      <edge source="rj" target="km" id="25" />
+      <edge source="rj" target="ck" id="26" />
+      <edge source="km" target="ck" id="27" />
+      <edge source="ck" target="lb" id="28" />
+      <edge source="ck" target="lv" id="29" />
+      <edge source="ck" target="ns" id="30" />
+      <edge source="ck" target="kl" id="31" />
+      <edge source="ck" target="qt" id="32" />
+      <edge source="lb" target="cg" id="33" />
+      <edge source="cg" target="lv" id="34" />
+      <edge source="cg" target="ck" id="35" />
+      <edge source="zz" target="dx" id="36" />
+      <edge source="zz" target="ch" id="37" />
+      <edge source="dx" target="zj" id="38" />
+      <edge source="dx" target="xz" id="39" />
+      <edge source="dx" target="mp" id="40" />
+      <edge source="dx" target="zn" id="41" />
+      <edge source="dx" target="xs" id="42" />
+      <edge source="dx" target="hc" id="43" />
+      <edge source="ch" target="dx" id="44" />
+      <edge source="kk" target="cs" id="45" />
+      <edge source="kk" target="tc" id="46" />
+      <edge source="tc" target="cs" id="47" />
+      <edge source="tc" target="hn" id="48" />
+      <edge source="hr" target="ck" id="49" />
+      <edge source="hr" target="pl" id="50" />
+      <edge source="pl" target="ck" id="51" />
+      <edge source="pl" target="xq" id="52" />
+      <edge source="pj" target="cs" id="53" />
+      <edge source="pj" target="pr" id="54" />
+      <edge source="pr" target="zl" id="55" />
+      <edge source="pr" target="cs" id="56" />
+      <edge source="zl" target="pm" id="57" />
+      <edge source="vn" target="cs" id="58" />
+      <edge source="vn" target="ls" id="59" />
+      <edge source="hn" target="pq" id="60" />
+      <edge source="qb" target="dr" id="61" />
+      <edge source="lv" target="hr" id="62" />
+      <edge source="mp" target="dr" id="63" />
+      <edge source="dr" target="rx" id="64" />
+      <edge source="broadcaster" target="ns" id="65" />
+      <edge source="broadcaster" target="pj" id="66" />
+      <edge source="broadcaster" target="xz" id="67" />
+      <edge source="broadcaster" target="sg" id="68" />
+      <edge source="ns" target="ck" id="69" />
+      <edge source="ns" target="kd" id="70" />
+      <edge source="xz" target="dx" id="71" />
+      <edge source="xz" target="zn" id="72" />
+      <edge source="sg" target="rz" id="73" />
+      <edge source="sg" target="jh" id="74" />
+      <edge source="gg" target="jh" id="75" />
+      <edge source="gg" target="nx" id="76" />
+      <edge source="nx" target="jh" id="77" />
+      <edge source="nx" target="cr" id="78" />
+      <edge source="cr" target="jg" id="79" />
+      <edge source="cr" target="jh" id="80" />
+      <edge source="jg" target="jh" id="81" />
+      <edge source="zj" target="hc" id="82" />
+      <edge source="zn" target="dd" id="83" />
+      <edge source="fl" target="jh" id="84" />
+      <edge source="fl" target="ps" id="85" />
+      <edge source="ps" target="bp" id="86" />
+      <edge source="ps" target="jh" id="87" />
+      <edge source="qp" target="dx" id="88" />
+      <edge source="qp" target="zj" id="89" />
+      <edge source="bp" target="zr" id="90" />
+      <edge source="zr" target="st" id="91" />
+      <edge source="kl" target="lb" id="92" />
+      <edge source="xq" target="rj" id="93" />
+      <edge source="xq" target="ck" id="94" />
+      <edge source="rm" target="zz" id="95" />
+      <edge source="rm" target="dx" id="96" />
+      <edge source="rz" target="jh" id="97" />
+      <edge source="rz" target="fl" id="98" />
+      <edge source="pm" target="cs" id="99" />
+      <edge source="pm" target="kk" id="100" />
+      <edge source="rk" target="ck" id="101" />
+      <edge source="rk" target="kl" id="102" />
+      <edge source="qt" target="dr" id="103" />
+      <edge source="dd" target="dx" id="104" />
+      <edge source="dd" target="qp" id="105" />
+      <edge source="kd" target="rk" id="106" />
+      <edge source="kd" target="ck" id="107" />
+      <edge source="ng" target="dr" id="108" />
+    </edges>
+  </graph>
+</gexf>
