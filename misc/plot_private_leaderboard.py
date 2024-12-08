@@ -9,9 +9,7 @@ url = "https://adventofcode.com/2024/leaderboard/private/view/2659480.json"
 
 cookie_fname = "SESSION_COOKIE.txt"
 if not os.path.exists(cookie_fname):
-    raise FileNotFoundError(
-        f"Please save your session cookie to {cookie_fname} and rerun the script."
-    )
+    raise FileNotFoundError(f"Please save your session cookie to {cookie_fname} and rerun the script.")
 with open(cookie_fname) as f:
     session_cookie = f.read().strip()
 
