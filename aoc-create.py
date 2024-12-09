@@ -4,6 +4,14 @@ import argparse
 import datetime
 import os
 
+template = """# %%
+
+def parse_input(fname):
+    with open(fname) as f:
+        for l in f:
+            pass
+"""
+
 
 def main():
     parser = argparse.ArgumentParser(description="Create a new Advent of Code day.")
@@ -23,7 +31,8 @@ def main():
         os.makedirs(directory)
         open(f"{directory}/input.txt", "w").close()
         open(f"{directory}/test_input.txt", "w").close()
-        open(f"{directory}/{day:02d}.py", "w").close()
+        with open(f"{directory}/{day:02d}.py", "w") as f:
+            f.write(template)
 
 
 if __name__ == "__main__":
