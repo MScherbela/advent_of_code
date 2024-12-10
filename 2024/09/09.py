@@ -142,9 +142,7 @@ while last_id_processed > 1:
             break
         space = space.next
 
-    # All files with larger length will also need to go after here
-    for k in range(current_file.length, 10):
-        leftmost_potential_space[k] = space
+    leftmost_potential_space[current_file.length] = space
 
     if space is None:  # no large enough space exists
         continue
