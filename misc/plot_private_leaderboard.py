@@ -47,18 +47,19 @@ df_delta = df_delta.reset_index().rename(columns={0: "delta_t"})
 
 
 plt.close("all")
-fig, axes = plt.subplots(2, 1, figsize=(8, 6))
+fig, axes = plt.subplots(2, 1, figsize=(8, 8))
 for idx_name, name in enumerate(df_delta.name.unique()):
     color = f"C{idx_name}"
-    for part, ls, marker in zip([1, 2], ["--", "-"], ["o", "x"]):
+    for part, ls, marker in zip([1, 2], ["--", "-"], ["o", "s"]):
         df_plot = df[(df.name == name) & (df.part == part)]
         axes[0].plot(
             df_plot.day,
             (df_plot.t - df_plot.start_time).dt.total_seconds() / 3600,
             label=f"{name} part {part}",
             marker=marker,
-            ls=ls,
+            ls="none",
             color=color,
+            ms=8,
         )
 
     df_delta_name = df_delta[df_delta.name == name]
@@ -71,10 +72,11 @@ for idx_name, name in enumerate(df_delta.name.unique()):
 
 for ax in axes:
     ax.set_xlabel("Day")
+    ax.grid(axis="y")
     ax.legend()
 
 
-axes[1].set_ylim([0, 120])
+axes[1].set_ylim([0, 90])
 axes[1].set_ylabel("Duration part 1 - part 2 / min")
 axes[0].set_ylim([6, 24])
 axes[0].set_ylabel("Time of completion / h")
