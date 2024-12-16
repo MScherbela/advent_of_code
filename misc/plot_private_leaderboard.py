@@ -12,8 +12,8 @@ if not os.path.exists(cookie_fname):
     raise FileNotFoundError(f"Please save your session cookie to {cookie_fname} and rerun the script.")
 with open(cookie_fname) as f:
     session_cookie = f.read().strip()
-
 cookies = {"session": session_cookie}
+
 response = requests.get(url, cookies=cookies)
 if response.status_code != 200:
     raise ValueError("Invalid response")
