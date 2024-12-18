@@ -3,3 +3,4 @@
 input.txt
 test_input.txt
 **/__pycache__/
+**/target/*
