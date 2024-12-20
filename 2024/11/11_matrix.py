@@ -105,8 +105,8 @@ def floor_log2(n):
     return power
 
 
-data = parse_input("input.txt")
-# data = [11, 12, 2024]
+# data = parse_input("input.txt")
+data = [11, 12, 2024]
 data = {k: 1 for k in data}
 print("Find graph")
 graph = find_unique_numbers(set(data.keys()))
